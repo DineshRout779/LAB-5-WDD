@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <form id="form">
+          <h2 class="title">user registraion</h2>
+
+          <!-- full name -->
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="form-control"
+              placeholder="Enter your full name"
+            />
+          </div>
+          <!-- email -->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-control"
+              placeholder="Enter your email"
+            />
+          </div>
+          <!-- phone number -->
+          <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input
+              type="number"
+              id="phone"
+              name="phone"
+              class="form-control"
+              placeholder="Enter your phone number"
+            />
+          </div>
+          <!-- aadhaar number -->
+          <div class="form-group">
+            <label for="aadhar">Aadhaar number</label>
+            <input
+              type="number"
+              id="aadhar"
+              name="aadhar"
+              class="form-control"
+              placeholder="Enter your Aadhar number"
+            />
+          </div>
+          <!-- course -->
+          <div class="form-group">
+            <label for="course">Choose your course</label>
+            <select name="course" id="course" class="form-control">
+              <option value="">Select a course</option>
+              <option value="mca">MCA</option>
+              <option value="btech">B.Tech</option>
+              <option value="mtech">M.Tech</option>
+              <option value="bplan">B.Plan</option>
+              <option value="imsc">Int. MSc</option>
+            </select>
+          </div>
+
+          <!-- gender -->
+          <div class="form-group">
+            <label for="gender" class="label">Gender</label>
+            <input type="radio" name="gender" id="male" />
+            <label for="male" class="other-label">Male</label>
+            &nbsp;
+            <input type="radio" name="gender" id="female" />
+            <label for="female" class="other-label">Female</label>
+            &nbsp;
+            <input type="radio" name="gender" id="other" />
+            <label for="other" class="other-label">Other</label>
+          </div>
+
+          <!-- address -->
+          <div class="form-group">
+            <label for="address">Address</label>
+            <textarea
+              name="address"
+              id="address"
+              class="form-control"
+              placeholder="Enter your address"
+            ></textarea>
+          </div>
+
+          <!-- password -->
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Please eneter your password"
+              class="form-control"
+            />
+          </div>
+
+          <!-- confirm password -->
+          <div class="form-group">
+            <label for="confirm_password">Confirm Password</label>
+            <input
+              type="password"
+              name="confirm_password"
+              id="confirm_password"
+              placeholder="Please re-enter your password"
+              class="form-control"
+            />
+          </div>
+
+          <div id="err"></div>
+
+          <div class="form-group">
+            <button type="submit" class="form-control btn">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
